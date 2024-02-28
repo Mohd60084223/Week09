@@ -1,4 +1,4 @@
-import unittest
+simport unittest
 from book_manager import Book, BookManager
 
 class TestBookManager(unittest.TestCase):
@@ -16,7 +16,7 @@ class TestBookManager(unittest.TestCase):
     def test_remove_book(self):
         self.manager.add_book(self.book1)
         self.manager.remove_book('Book One')
-        self.assertEqual(self.manager.list_book(),[])
+        self.assertEqual(self.manager.list_books(),[])
 
     def test_remove_nonexistent_book(self):
         self.manager.add_book(self.book1)
